@@ -2,9 +2,12 @@ import {
     MongoClient
 } from 'mongodb';
 import nextConnect from 'next-connect';
+import process from 'process';
 
 const MONGODB_URI = process.env.MONGODB_URI;
 const MONGODB_DB = process.env.DB_NAME;
+console.log(MONGODB_URI);
+console.log(MONGODB_DB);
 
 const client = new MongoClient(MONGODB_URI, {
     useNewUrlParser: true,
