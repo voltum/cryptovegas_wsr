@@ -9,6 +9,7 @@ import homeStyles from '../styles/Home.module.css'
 export default function RegisterForm({l, locale}){
     const [submitting, setSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
+    const l = langs[locale];
 
     const sendStream = async (e) => {
         setSubmitting(true);
