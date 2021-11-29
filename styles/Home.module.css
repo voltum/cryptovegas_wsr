@@ -25,6 +25,7 @@
 }
 .language_toggle_item:hover{
   background-color: #da009a;
+  cursor: pointer;
 }
 .language_toggle_item_active{
   background-color: #da009a;

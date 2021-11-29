@@ -16,11 +16,11 @@ export default function Header({locale}){
             <header className={styles.header}>
                 <div className={styles.container}>
                 <div className={styles.language_toggle}>
-                    <Link href={pathname} locale={'en'} className={`${styles.language_toggle_item} ${locale === 'en'?styles.language_toggle_item_active:''}`}>
-                    en
+                    <Link href={pathname} locale={'en'}>
+                    <span className={`${styles.language_toggle_item} ${locale === 'en'?styles.language_toggle_item_active:''}`}>en</span>
                     </Link>
-                    <Link href={pathname} locale={'ru'} className={`${styles.language_toggle_item} ${locale === 'ru'?styles.language_toggle_item_active:''}`}>
-                    ru
+                    <Link href={pathname} locale={'ru'}>
+                    <span className={`${styles.language_toggle_item} ${locale === 'ru'?styles.language_toggle_item_active:''}`}>ru</span>
                     </Link>
                 </div>
                 </div>
