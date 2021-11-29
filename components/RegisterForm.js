@@ -21,13 +21,12 @@ export default function RegisterForm({l}){
             })
         })
         setSubmitting(false);
-        if(res.status === 200){
+        if(res.status === 201){
             setSubmitted(true);
             cogoToast.success('Your video is submitted successfully!')
         } else {
             setSubmitted(false);
             cogoToast.error('Error while submitting your video!');
-            console.log(res);
         }
     }
 

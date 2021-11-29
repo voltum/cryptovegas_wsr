@@ -1,22 +1,32 @@
 import nextConnect from 'next-connect';
-import middleware from '../../middleware/database';
+import connection from '../../utils/connection'
+import Streamer from '../../models/Streamer'
 
-const handler = nextConnect();
-
-handler.use(middleware);
-
-handler.get(async (req, res) => {
-    let doc = await req.db.collection('streamers').findOne()
-    console.log(doc);
-    res.json(doc);
-});
-
-handler.post(async (req, res) => {
-    let data = req.body;
-    data = JSON.parse(data);
-    data.date = new Date();
-    let doc = await req.db.collection('streamers').insertOne(data)
-    res.json({message: 'ok'});
-});
-
-export default handler;
+export default async function handler (req, res) {
+    const { method } = req
+  
+    await connection()
+  
+    switch (method) {
+    //   case 'GET':
+    //     try {
+    //       const streamers = await Streamer.find({})
+    //       res.status(200).json({ success: true, data: streamers })
+    //     } catch (error) {
+    //       res.status(400).json({ success: false })
+    //     }
+    //     break
+      case 'POST':
+        try {
+            const body = JSON.parse(req.body);
+            const streamer = await Streamer.create({...body, date: Date.now()})
+            res.status(201).json({ success: true, data: streamer })
+        } catch (error) {
+            res.status(400).json({ success: false });
+        }
+        break
+      default:
+        res.status(400).json({ success: false })
+        break
+    }
+}
