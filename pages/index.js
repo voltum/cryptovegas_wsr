@@ -25,8 +25,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>CryptoVegas World Stream Race</title>
-        <meta name="description" content="CryptoVegas World Stream Race" />
+        <title>WSR 2022 CRYPTO VEGAS</title>
+        <meta name="description" content="Join the CryptoVegas competition 2022 • Contest for casino streamers" />
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
       </Head>

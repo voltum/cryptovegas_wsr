@@ -42,3 +42,16 @@
     overflow: hidden;
     border: 0;
 }
+@media only screen and (max-width: 575px){
+    .form_block button[type='submit']{
+        width: 73%;
+        font-size: 30px;
+    }
+
+}
+@media only screen and (max-width: 320px){
+    .form_block button[type='submit']{
+        width: 80%;
+        font-size: 25px;
+    }
+}
