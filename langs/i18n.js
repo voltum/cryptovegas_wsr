@@ -5,6 +5,7 @@ export default {
         rules: 'Правила',
         rulesList: {
             1: 'Участвуют все выигрышные ставки от от х100+ .',
+            h_1: 'Система подсчета выглядит следующим образом:',
             2: 'Очки не могут быть зачислены после пробития карт или любых других функций игры на риск , т.е. умножать текущий "Х" - нельзя.',
             3: 'Накопление бонусов вне стрима - запрещено . Такие "Х" не будут засчитаны.',
             4: 'Покупная бонусная игра засчитывается от суммы ее покупки , т.е. если она стоит 40$ (ставка 0,40) - это ровняется ставке 40$.',
@@ -18,15 +19,27 @@ export default {
             12: 'Минимальная ставка составляет 0.40 USD.',
             13: 'Призы за Гонку будут начислены в течении 10 дней после окончания конкурса.',
             14: 'Подать заявку на участие вы можете в',
-            15: 'Требования к каналу:'
+            thisForm: 'данной форме',
+            15: 'Требования к каналу:',
+            15_1: 'Стример обязан быть в кадре во время выигрыша.',
+            15_2: 'Важно добавлять лейбл КриптоВегас WSR 2021 в название стримов и на экран трансляции.',
+            15_3: 'Логотипы скачать тут',
+            15_4: 'В случае блокировок или банов стримов, рекомендуем сохранять стримы так же через OBS, чтобы избежать долгих проверок.',
+            15_5_1: 'Тайм коды , Видео или cсылку на видео , загружать',
+            15_5_2: 'со своим Никнеймом.',
+            15_6: 'Администрация Крипто Вегаса оставляет за собой право изменять правила или остановить гонку в любой момент.'
         },
+        here: 'сюда',
         inclusiveTill: 'включительно до',
         topPlaces: 'Призовые места',
         download: 'Скачать',
         videoURL: 'URL видео',
         timecode: 'Таймкод',
         nicknameOnCryptoVegas: 'Никнейм на CryptoVegas',
-        submit: 'Отправить'
+        submit: 'Отправить',
+        error: 'Ошибка',
+        yourVideoSubmitted: 'Ваше видео успешно отправлено',
+        errorWhileSubmitting: 'Ошибка в процессе отправки Вашего видео'
     },
     en: {
         participate: 'Participate',
@@ -34,6 +47,7 @@ export default {
         rules: 'Rules',
         rulesList: {
             1: 'All winning bets from от х100+ are eligible.',
+            h_1: 'The counting system looks as follows:',
             2: 'Points cannot be credited after breaking through cards or any other functions of the risk game, i.e. it is impossible to multiply the current "X".',
             3: 'Accumulation of bonuses outside the stream is prohibited. Such "Xs" will not be counted.',
             4: 'The purchased bonus game is counted from the amount of its purchase, i.e. if it costs $40 (a bet of 0.40), then it is equal to a bet of $40.',
@@ -47,8 +61,17 @@ export default {
             12: 'The minimum bet is 0.40 USD.',
             13: 'Prizes for the Race will be credited within 10 days after the end of the competition.',
             14: 'You can apply for participation in',
-            15: 'Channel requirements:'
+            thisForm: 'this form',
+            15: 'Channel requirements:',
+            15_1: 'The streamer must be in the frame while winning.',
+            15_2: 'It is important to add the CryptoVegas WSR 2021 label to the name of the streams and to the broadcast screen.',
+            15_3: 'The logos can be downloaded here',
+            15_4: 'In case of blocking or bans of streams, we recommend you to save streams through OBS as well to avoid lengthy checks.',
+            15_5_1: 'Time codes, Video, or a link to a video, you must upload',
+            15_5_2: 'with your Nickname. ',
+            15_6: 'The CryptoVegas administration reserves the right to change the rules or stop the race at any time.'
         },
+        here: 'here',
         inclusiveTill: 'inclusive till',
         topPlaces: 'Prize places',
         download: 'Download',
@@ -56,5 +79,8 @@ export default {
         timecode: 'Timecode',
         nicknameOnCryptoVegas: 'Nickname on CryptoVegas',
         submit: 'Submit',
+        error: 'Error',
+        yourVideoSubmitted: 'Your video is submitted successfully',
+        errorWhileSubmitting: 'Error while submitting your video'
     }
 }

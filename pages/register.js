@@ -26,7 +26,7 @@ export default function Register() {
                 <div className={''}>
 
                 </div>
-                <RegisterForm l={l} />
+                <RegisterForm l={l} locale={locale} />
             </section>
         </>
     )

@@ -117,7 +117,7 @@ export default function Home() {
           <ol className={styles.rules_text}>
             <li>
               {l.rulesList[1]}
-              <h3>Система подсчета выглядит следующим образом:</h3>
+              <h3>{l.rulesList['h_1']}</h3>
               <span>0.40 - 1.99 USD</span> = 0.5 (x100=50) <br/>
               <span>2 - 6.99 USD</span> = 1 (x 100=100) <br/>
               <span>7 - 14.99 USD</span> = 2 x 100=200 <br/>
@@ -139,12 +139,12 @@ export default function Home() {
             <li>{l.rulesList[14]}</li>
             <li>{l.rulesList[15]} 
               <ul>
-                <li>Стример обязан быть в кадре во время выигрыша.</li>
-                <li>Важно добавлять лейбл КриптоВегас WSR 2021 в название стримов и на экран трансляции .</li>
-                <li>Логотипы скачать тут &nbsp;&nbsp;<a href={'../download/Logo_CV_WSR_2021.zip'} className={styles.btn} download>{l.download}</a></li>
-                <li>В случае блокировок или банов стримов, рекомендуем сохранять стримы так же через OBS, чтобы избежать долгих проверок.  </li>
-                <li>Тайм коды , Видео или cсылку на видео , загружать СЮДА со своим Никнеймом. </li>
-                <li>Администрация Крипто Вегаса оставляет за собой право изменять правила или остановить гонку в любой момент.</li>
+                <li>{l.rulesList[15_1]}</li>
+                <li>{l.rulesList[15_2]}</li>
+                <li>{l.rulesList[15_3]} &nbsp;&nbsp;<a href={'../download/Logo_CV_WSR_2021.zip'} className={styles.btn} download>{l.download}</a></li>
+                <li>{l.rulesList[15_4]}</li>
+                <li>{l.rulesList[15_5_1]} <Link href="/register">{l.here}</Link> {l.rulesList[15_5_2]}</li>
+                <li>{l.rulesList[15_6]}</li>
               </ul>
             </li>
           </ol>
