@@ -19,8 +19,8 @@ export default async function handler (req, res) {
     //     break
       case 'POST':
         try {
-            const body = JSON.parse(req.body);
-            const streamer = await Streamer.create({...body, date: Date.now()})
+            // const body = JSON.parse(req.body);
+            const streamer = await Streamer.create({...req.body, date: Date.now()})
             res.status(201).json({ success: true, data: streamer })
         } catch (error) {
             res.status(400).json({ success: false });

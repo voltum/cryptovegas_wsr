@@ -14,11 +14,11 @@ export default function RegisterForm({l}){
         e.preventDefault();
         const res = await fetch('/api/register', {
             method: 'post',
-            body: JSON.stringify({
+            body: {
                 nickname: e.target.elements.nickname.value,
                 video_url: e.target.elements.video_url.value,
                 timecode: e.target.elements.timecode.value
-            })
+            }
         })
         setSubmitting(false);
         if(res.status === 201){
