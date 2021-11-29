@@ -4,8 +4,8 @@ import Streamer from '../../models/Streamer'
 
 export default async function handler (req, res) {
     res.setHeader('Content-Type', 'application/json');
-    const { method } = req
-  
+    let { method } = req
+    method = method.toUpperCase();
     await connection()
   
     switch (method) {
@@ -27,7 +27,7 @@ export default async function handler (req, res) {
         }
         break
       default:
-        res.status(400).json({ success: false })
+        res.status(405).json({ success: false })
         break
     }
 }
