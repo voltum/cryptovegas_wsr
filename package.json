@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "cogo-toast": "^4.2.3",
-    "mongodb": "^3.4.1",
+    "mongodb": "^3.5.7",
     "next": "12.0.4",
     "next-connect": "^0.11.0",
     "react": "17.0.2",
