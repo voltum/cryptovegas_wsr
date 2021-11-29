@@ -26,7 +26,8 @@ export default function RegisterForm({l}){
             cogoToast.success('Your video is submitted successfully!')
         } else {
             setSubmitted(false);
-            cogoToast.error('Error while submitting your video!')
+            cogoToast.error('Error while submitting your video!');
+            console.log(res);
         }
     }
 
