@@ -3,6 +3,7 @@ import connection from '../../utils/connection'
 import Streamer from '../../models/Streamer'
 
 export default async function handler (req, res) {
+    res.setHeader('Content-Type', 'application/json');
     const { method } = req
   
     await connection()
