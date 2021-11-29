@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react"
+import langs from '../langs/i18n'
 import cogoToast from 'cogo-toast';
 import styles from '../styles/Register.module.css'
 import homeStyles from '../styles/Home.module.css'
 
 // const PROD_URL = process.env.PROD_URL;
 
-export default function RegisterForm({l}){
+export default function RegisterForm({l, locale}){
     const [submitting, setSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
+    const l = langs[locale];
 
     const sendStream = async (e) => {
         setSubmitting(true);
@@ -23,10 +25,10 @@ export default function RegisterForm({l}){
         setSubmitting(false);
         if(res.status === 201){
             setSubmitted(true);
-            cogoToast.success('Your video is submitted successfully!')
+            cogoToast.success(l.yourVideoSubmitted)
         } else {
             setSubmitted(false);
-            cogoToast.error('Error while submitting your video!');
+            cogoToast.error(l.errorWhileSubmitting);
         }
     }
 
