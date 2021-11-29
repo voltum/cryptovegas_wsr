@@ -7,7 +7,7 @@ import styles from '../styles/Register.module.css'
 import Header from '../components/Header'
 import RegisterForm from '../components/RegisterForm'
 
-export default function register() {
+export default function Register() {
     const { locale, locales, defaultLocale } = useRouter();
     const l = langs[locale];
     const router = useRouter();
