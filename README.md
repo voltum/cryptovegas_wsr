@@ -1,5 +1,11 @@
 # Landing page for [World Stream Race](https://cryptoworldstreamrace.com/) on Next.js
 
+## Technologies
+- Next.js
+- React.js
+- MongoDB
+- Cogo Toast
+
 ## Available Scripts
 
 In the project directory, you can run:
